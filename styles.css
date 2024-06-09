@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'IM FELL English';
+    src: url('fonts/IMFellEnglish-Regular.ttf') format('truetype'); 
+}
+/* Italic */
+@font-face {
+    font-family: 'IM FELL English Italic';
+    src: url('fonts/IMFellEnglish-Italic.ttf') format('truetype');
+}
+
+body h1{
+    font-family: 'IM FELL English Italic', serif;
+}
+
+
 .logo{
     vertical-align: middle;
     height: auto;
@@ -16,6 +31,7 @@
 .navbar-nav .nav-link{
     font-weight: 600;
     color: var(--c dark);
+
 }
 /*.navbar-nav .nav-link.active {
     color: var(--c dark);
@@ -31,7 +47,7 @@
     position: relative;
     border-radius: 20px;
     padding: 10px 20px;
-    text-decoration: none;
+    text-decoration: solid;
     /*background-color: rgba(171, 121, 77, 0.929);*/
     background-color: rgb(95, 65, 31);
     color:white;
@@ -288,4 +304,21 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding:10px;
+}
+
+#monthDropdown{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#checkboxContainer{
+    gap: 5px;
+}
+#checkBox {
+    border: 5px solid black;
+}
+#checkBox:checked {
+    background-color: #DDD0C3;
+    color: black;
 }
